@@ -1,0 +1,70 @@
+.corpo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cabecalho {
+  margin: 0px;
+  padding: 40px;
+  padding-bottom: 0px;
+  font-size: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.writeWork {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.inputTarefa {
+  text-align: center;
+}
+
+.botao {
+  padding-top: 20px;
+}
+
+.todoList {
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.listaGerada {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.itemGerado {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  grid-template-areas: "tarefa todo excluir editar";
+}
+
+.itemGerado > span {
+  grid-area: tarefa;
+}
+
+.itemGerado > div {
+  grid-area: todo;
+}
+
+.excluir {
+  grid-area: excluir;
+}
+
+.editar {
+  grid-area: editar;
+}
